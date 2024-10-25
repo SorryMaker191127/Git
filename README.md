@@ -83,3 +83,16 @@
 
 7.拉取远程代码
 `git pull`
+
+### 分支
+1.创建分支
+`git branch ${branchName}`
+
+2.切换分支
+`git checkout/switch ${branchName}`
+
+3.将目标分支合并到当前分支
+`git merge ${targetBranchName}`
+
+4.删除分支（已被合并使用-d,未被合并使用-D）
+`gti branch -d/-D ${branchName}`
