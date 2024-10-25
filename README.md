@@ -63,3 +63,23 @@
 2.git rm 命令同时删除暂存区和工作区文件，再提交
 `git rm ${rmFileName}`
 `git commiit -m ${remove description}`
+
+### 远程仓库管理代码
+1.注册账号
+
+2.生成SSH密钥
+`ssh-keygen -t -rsa -C ${userEmail}`
+
+3.配置SSH密钥
+
+4.将本地仓库和远程仓库关联(origin 远程仓库别名)
+`git remote add origin ${gitRepositoryAdress}`
+
+5.指定分支的名称
+`git branch -M ${main/master}`
+
+6.将本地分支关联并推送到远程分支
+`git push -u origin ${main/master}`
+
+7.拉取远程代码
+`git pull`
