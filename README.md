@@ -26,4 +26,17 @@
 `git commiit -m ${commit description}`
 
 5.查看提交记录
-`git log`
+`git log` 
+
+### 版本回退
+1.--soft 保留暂存区和工作区
+`git reset --soft ${commit ID}`
+
+2.--hard 舍弃暂存区和工作区
+`git reset --hard ${commit ID}`
+
+3.--mixed 舍弃暂存区,保留工作区
+`git reset --mixed ${commit ID}`
+
+4.查看所有提交记录
+`git reflog`
