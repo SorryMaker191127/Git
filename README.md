@@ -53,3 +53,13 @@
 
 4.比较两个版本之间的差异
 `git diff ${commit ID} ${commit ID}`
+
+### 删除文件
+1.先从工作区删除文件，再同步暂存区，再提交
+`rm ${rmFileName}`
+`git add ${rmFileName} / git add .`
+`git commiit -m ${remove description}`
+
+2.git rm 命令同时删除暂存区和工作区文件，再提交
+`git rm ${rmFileName}`
+`git commiit -m ${remove description}`
