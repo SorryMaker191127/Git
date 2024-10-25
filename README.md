@@ -40,3 +40,16 @@
 
 4.查看所有提交记录
 `git reflog`
+
+### 比较差异
+1.默认情况比较工作区和暂存区的差异
+`git diff`
+
+2.比较暂存区和仓库的差异
+`git diff --cached`
+
+3.比较工作区和仓库之间的差异
+`git diff ${commit ID}`
+
+4.比较两个版本之间的差异
+`git diff ${commit ID} ${commit ID}`
